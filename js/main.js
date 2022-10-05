@@ -10,3 +10,10 @@ if(marca === "Honda"|"Ford"|"Chevrolet"|"Peugeot"|"Isuzu"){
 }else{
     alert("No trabajamos la marca ingresada");
 }} 
+
+//Precios
+let cantidad = parseInt(prompt("Ingrese cantidad de productos"));
+let precio = $100;
+let total = + cantidad + (+ precio);
+
+alert("El total a pagar es " total);
