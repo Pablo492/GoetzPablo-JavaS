@@ -21,13 +21,17 @@ if(marca === "Honda"|"Ford"|"Chevrolet"|"Peugeot"|"Isuzu"){
 
 
 
-//Bucle o Ciclo
+//Bucle o Ciclo    "for (i=1; i<10; i++)"
 let producto = prompt("Ingrese producto o la tecla 'F' para finalizar");
 //le damos permiso que ingrese productos hasta ingresar "F" fin.
 while(producto != "F"|"f"){
     alert("Se ingreso"+ producto);
-    producto= prompt("Ingresar otro producto o 'f' para finalizar");
+    for (producto=1; producto!= "f"|"F"; producto++)
+    prompt("Ingresar otro producto o 'f' para finalizar");
+    var newArray = pedido [producto];
 };
+
+
 
 
 
@@ -57,7 +61,4 @@ else if (numProductos >= 5){
 precioTransporteAPagar = precioTransporte[3];
 }
 
-//
 
-//Ciclo Bucle
-for (i=1; i<10; i++);
