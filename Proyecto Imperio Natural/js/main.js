@@ -20,17 +20,49 @@ if(producto === "Banana"|"Manzana"|"Naranja"|"Mandarina"){
 
 
 //Bucle o Ciclo    "for (i=1; i<10; i++)"
-let producto = prompt("Ingrese producto o la tecla 'F' para finalizar");
-//le damos permiso que ingrese productos hasta ingresar "F" fin.
+
+//le damos permiso que ingrese productos hasta ingresar "F" fin, formando asi el Array "Pedido".
+const pedido1 = [];
+
+do{
+    let entrada = prompt("Ingresar otro producto o 'f' para finalizar");
+    pedido1.push(entrada.tuUpperCase());
+    console.log(listaPedido1.length);
+}
 while(producto != "F"|"f"){
     alert("Se ingreso"+ producto);
     for (producto=1; producto!= "f"|"F"; producto++)
     prompt("Ingresar otro producto o 'f' para finalizar");
-    var newArray = pedido [producto];
+    var newArray = pedido1 [producto];
 };
 
+//Recorrer el array de productos
+
+for (let index = 0; index<5; index++ ){
+    alert(pedido1 [index]);
+}
+
+//Eliminar productos de la lista
+const eliminar = let(prompt("Detalle producto a eliminar"= productox)); {
+    //ubicar el producto que quiera eliminar en el listado(Array)
+    let index = pedido1.indexOf(productox);
+    if (index != -1) {
+        pedido1.splice (index, "");
+    }
+}
+eliminar(productox)
 
 
+//Guardamos el Pedido en el storage
+
+
+const enJSON = JSON.stringify(pedido1);
+
+console.log (enJSON);
+console.log (typeof pedido1);
+console.log (typeof enJSON);
+
+localStorage.setItem("pedido1", enJSON);
 
 
 //Precios  (FOR)
